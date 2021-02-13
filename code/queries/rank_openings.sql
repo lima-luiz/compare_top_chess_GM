@@ -1,0 +1,1 @@
+SELECT ECO, count(ECO) as cnt FROM chess_games group by ECO order by cnt desc;

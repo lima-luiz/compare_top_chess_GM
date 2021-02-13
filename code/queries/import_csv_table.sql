@@ -1,0 +1,1 @@
+LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/formatted.csv' INTO TABLE chess_games FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n'

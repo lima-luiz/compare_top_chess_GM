@@ -1,0 +1,3 @@
+/****** Script for selecting all games played with Caro-Kahn B10-B19 opening  ******/
+SELECT WHITE, COUNT(WHITE) AS cnt_white FROM chess_games WHERE (ECO Like '%B10%' OR ECO Like '%B11%' OR ECO Like '%B12%' OR ECO Like '%B13%' OR ECO Like '%B14%' OR ECO Like '%B15%' OR ECO Like '%B16%' OR ECO Like '%B17%' OR ECO Like '%B18%' OR ECO Like '%B19%') GROUP BY WHITE order by cnt_white desc;
+SELECT BLACK, COUNT(BLACK) AS cnt_black FROM chess_games WHERE (ECO Like '%B10%' OR ECO Like '%B11%' OR ECO Like '%B12%' OR ECO Like '%B13%' OR ECO Like '%B14%' OR ECO Like '%B15%' OR ECO Like '%B16%' OR ECO Like '%B17%' OR ECO Like '%B18%' OR ECO Like '%B19%') GROUP BY BLACK order by cnt_black desc;
